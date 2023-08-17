@@ -10,11 +10,203 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="hero">
+    <header class="header">
+        <nav class="header__content">
+            <ul class="header__content__list">
+                <li class="header__content__list__item">
+                    <a href="#shows">Elenco</a>
+                </li>
+                <li class="header__content__list__item">
+                    <a href="#movie-sumary">Resumo</a>
+                </li>
+                <li class="header__content__list__item">
+                    <a href="#game-movie">Comparação</a>
+                </li>
+                <li class="header__content__list__item">
+                    <a href="#available-movie">Onde assistir</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="header__content__mobile">
+            <ul class="header__content__mobile__list">
+                <li class="header__content__list__item">
+                    <a href="#shows">Elenco</a>
+                </li>
+                <li class="header__content__list__item">
+                    <a href="#movie-sumary">Resumo</a>
+                </li>
+                <li class="header__content__list__item">
+                    <a href="#game-movie">Comparação</a>
+                </li>
+                <li class="header__content__list__item">
+                    <a href="#available-movie">Onde assistir</a>
+                </li>
+            </ul>
+            <span class="menu_close">
+                <button id="close" class="menu__icon__button">
+                    <img src="./dist/images/close_white_36dp.svg" alt="Fechar">
+                </button>
+            </span>
+        </nav>
+        <span class="menu__icon">
+            <button id="icon" class="menu__icon__button">
+                <img src="./dist/images/menu_white.svg" alt="Abrir">
+            </button>
+        </span>
+    </header>
+    <section class="hero" id="hero">
         <div class="hero__content">
-            <img class="hero__content__brand" src="./dist/images/nfs_brand.jpg" alt="Foto do filme">
-            <h3><i>Need For Speed</i></h3>
+            <h3 class="title--big"><i>Need For Speed</i></h3>
+            <p class="text">
+                Explore o Universo de <i>Need For Speed</i> no Filme.
+            </p>
         </div>
     </section>
+    <section class="shows" id="shows">
+        <nav class="shows__tabs">
+            <button class="shows__tabs__button shows__tabs__button--is-active" data-tab-button="atores">
+                Atores principais
+            </button>
+            <button class="shows__tabs__button" data-tab-button="carros">
+                Principais carros
+            </button>
+        </nav>
+        <ul data-tab-id="atores" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/images/aaron_paul.jpg" alt="Aaron Paul">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/harrison_gilbertson.jpg" alt="Harrison Gilbertson">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/dominic_cooper.jpg" alt="Dominic Cooper">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/imoogen_poots.jpg" alt="Imoogen Poots">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/dakota_johnson.jpg" alt="Dakota Johnson">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/rami-malek.jpg" alt="Rami Malek">
+            </li>
+        </ul>
+        <ul data-tab-id="carros" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/mustang.jpg" alt="Aaron Paul">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/koenigsegg_agera_r.jpg" alt="Harrison Gilbertson">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/lamborghini_sesto_elemento.jpg" alt="Dominic Cooper">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/bugatti-veyron-super-sport.jpg" alt="Imoogen Poots">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mclaren_p1.jpg" alt="Dakota Johnson">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/saleen_s7.jpg" alt="Rami Malek">
+            </li>
+        </ul>
+    </section>
+    <section class="movie-sumary" id="movie-sumary">
+        <div class="movie-sumary__content">
+            <h2 class="title">
+                Resumo do filme
+            </h2>
+            <p class="text">
+                "Need for Speed" é um filme de ação e corrida que segue a história de Tobey Marshall (interpretado por Aaron Paul), um habilidoso mecânico de carros e piloto talentoso. Após ser injustamente culpado por um acidente que resulta na morte de seu amigo, Tobey é liberado da prisão com um único objetivo: vingar a morte do amigo e limpar seu nome.
+                Determinado a provar sua inocência, Tobey participa de uma emocionante e perigosa corrida clandestina cruzando o país. Com a ajuda de sua equipe, ele se envolve em corridas de alta velocidade, escapadas cinematográficas e confrontos emocionantes. No entanto, um obstáculo inesperado surge quando um poderoso magnata da indústria automobilística coloca uma recompensa pela cabeça de Tobey.
+                Ao longo da jornada, Tobey enfrenta seus próprios desafios internos, encontra aliados improváveis e descobre a verdadeira importância da lealdade e amizade. O filme captura a emoção da velocidade, a busca por justiça e a paixão pela competição nas corridas de rua ilegais.
+                "Need for Speed" é uma montanha-russa de ação, adrenalina e emoção, repleta de cenas espetaculares de corridas de carros e reviravoltas emocionantes. É uma história sobre redenção, superação e a busca incansável por honra."
+            </p>
+        </div>
+    </section>
+    <section class="game-movie" id="game-movie">
+        <h2 class="title">Comparação com os jogos</h2>
+        <div class="game-movie__content">
+                <ul>
+                    <li>
+                        <h3 class="title--small">
+                            Semelhanças:
+                        </h3>
+                    </li>
+                    <li>
+                        <p class="text">
+                            1- Velocidade e Adrenalina: Tanto nos jogos quanto no filme, a velocidade e a adrenalina são elementos centrais. Ambos capturam a emoção das corridas de alta velocidade e a busca pelo pódio.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text">
+                            2- Carros Icônicos: Tanto no filme quanto nos jogos, uma variedade de carros icônicos e personalizáveis é apresentada. Os fãs podem desfrutar da emoção de pilotar veículos de alto desempenho.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text">
+                            3- Cenários Urbanos e Desafiadores: A série de jogos "Need for Speed" muitas vezes apresenta cenários urbanos e pistas desafiadoras. O filme também incorpora esses elementos, com corridas acontecendo em ambientes urbanos realistas e emocionantes.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text">
+                            4- Estilo Visual e Layout Dinâmico: Tanto o filme "Need for Speed" quanto os jogos da série compartilham um estilo visual dinâmico e moderno. O layout do filme e dos jogos é projetado para transmitir a sensação de velocidade, adrenalina e ação. Elementos como gráficos vibrantes, tipografia impactante e imagens de carros em movimento contribuem para criar uma estética envolvente.
+                        </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3 class="title--small">
+                            Diferenças:
+                        </h3>
+                    </li>
+                    <li>
+                        <p class="text">
+                            1- Narrativa e Personagens: Enquanto os jogos "Need for Speed" tendem a focar na jogabilidade e nas corridas, o filme introduz uma trama mais elaborada com personagens desenvolvidos. O enredo do filme gira em torno da vingança de Tobey Marshall, enquanto os jogos podem ter narrativas mais variadas.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text">
+                            2- Ação Cinematográfica: O filme aproveita a natureza cinematográfica para apresentar corridas espetaculares e perseguições emocionantes. Essas cenas são criadas para proporcionar uma experiência visual impressionante que difere das interações diretas dos jogos.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text">
+                            3- Fidelidade ao Jogo: Embora o filme tenha sido inspirado na série de jogos, ele não segue as histórias específicas de nenhum jogo em particular. Ele traz elementos do universo dos jogos, mas apresenta uma narrativa original.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text">
+                            4- Exploração dos Personagens: O filme permite uma exploração mais profunda dos personagens, suas motivações e relacionamentos. Nos jogos, a ênfase costuma estar na jogabilidade e na competição.
+                        </p>
+                    </li>
+                </ul>
+        </div>
+    </section>
+    <section class="available-movie" id="available-movie">
+        <div class="available-movie__content">
+            <h2 class="title">
+                Onde assistir
+            </h2>
+            <ul class="available-movie__content__list">
+                <li class="available-movie__content__list__item">
+                    <a href="https://www.disneyplus.com/pt-br" target="_blank"><img src="./dist/images/disney-plus.jpg" alt="Disney+"></a>
+                </li>
+                <li class="available-movie__content__list__item">
+                    <a href="https://www.primevideo.com" target="_blank"><img src="./dist/images/prime_video.jpg" alt="Prime video"></a>
+                </li>
+                <li class="available-movie__content__list__item">
+                    <a href="https://www.hulu.com" target="_blank"><img src="./dist/images/hulu.jpg" alt="Hulu"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="text--small">
+            &copy; 2023 - Todos os direitos reservados
+        </p>
+    </footer>
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>

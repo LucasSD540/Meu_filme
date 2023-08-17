@@ -1,0 +1,47 @@
+.movie-sumary {
+    padding: 2vw 5.6vw;
+    min-height: 50vw;
+    background-image: url(../images/mustang_drifting.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 1024px) {
+        background-image: url(../images/thumb_cel.jpg);
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        h2 {
+            padding-left: 15vw;
+            margin-top: 1vw;
+
+            @media (max-width: 768px) {
+                font-size: 24px;
+                padding: 0;
+                text-align: center;
+            }
+        }
+
+        p {
+            max-width: 1000px;
+            width: 100%;
+            color: #fff;
+            background-color: rgba(0, 0, 0, .6);
+            border-radius: 4px;
+            font-size: 24px;
+            text-align: justify;
+
+            @media (max-width: 768px) {
+                font-size: 18px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}

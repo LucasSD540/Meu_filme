@@ -1,5 +1,12 @@
 @use 'variaveis';
 @use 'hero';
+@use 'shows';
+@use 'movie-sumary';
+@use 'game-movie';
+@use 'available-movie';
+@use 'header';
+
+// reset
 
 * {
     margin: 0;
@@ -8,7 +15,60 @@
     font-family: 'Bebas Neue', sans-serif;
 }
 
+// fundo da página
+
 body {
     background-color: variaveis.$corDeFundo;
 }
 
+// Definindo o tamanho das fontes:
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: calc($fontSize + 10px);
+    color: variaveis.$corTerciaria;
+    font-family: Roboto, sans-serif;
+}
+
+.text {
+    @include text;
+
+    color: #fff;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text--small {
+    @include text(12px);
+
+    text-align: center;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: variaveis.$corPrincipal;
+}
+
+.title {
+    @include title;
+
+    color: #fff
+}
+
+.title--big {
+    @include title(44px);
+
+    color: variaveis.$corPrincipal;
+}
+
+.title--small {
+    @include title(28px);
+
+    color: #fff;
+}
+
+.footer {
+    margin-bottom: 32px;
+}
