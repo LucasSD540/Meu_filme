@@ -1,0 +1,47 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 100vh;
+    background-image: url(../images/banner_nfs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        background-image: url(../images/banner_nfs_cel.jpg);
+    }
+
+    @media (min-width: 769px) and (max-width: 1720px) {
+        background-image: url(../images/banner_nfs_cel.jpg);
+    }
+
+    &__content {
+
+        &__brand {
+            max-width: 320px;
+            width: 100%;
+            margin-left: 10vw;
+            margin-top: 5vw;
+            border-radius: 4px;
+        }
+
+        h3 {
+            margin-left: 10vw;
+
+            @media (max-width: 1743px) {
+                display: none;
+            }
+        }
+
+        p {
+            color: #000;
+            margin-left: 10vw;
+            font-size: 24px;
+
+            @media (max-width: 1743px) {
+                display: none;
+            }
+        }
+    }
+}
+

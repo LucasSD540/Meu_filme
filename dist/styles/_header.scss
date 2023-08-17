@@ -1,0 +1,80 @@
+@use 'variaveis';
+
+.header {
+    background-color: rgba(0, 0, 0, .8);
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 16px 5.6vw;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        padding: 24px 5.6vw;
+    }
+
+    &__content {
+        &__list {
+            display: flex;
+            list-style: none;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+
+            &__item a {
+                color: #fff;
+                text-decoration: none;
+                margin-right: 16px;
+                font-size: 24px;
+
+                &:hover {
+                    color: variaveis.$corQuaternaria;
+
+                    @media (max-width: 768px) {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        &__mobile {
+            display: none;
+
+            span {
+                button {
+                    position: absolute;
+                    top: 10vw;
+                }
+            }
+
+            &__list {
+                list-style: none;
+            }
+
+            &--is-active {
+                display: block;
+                position: sticky;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    .menu__icon {
+        &__button {
+            background-color: transparent;
+            border: none;
+            display: block;
+            margin-left: 80vw;
+
+            @media (min-width: 769px) {
+                display: none;
+            }
+
+            img {
+                background-color: transparent;
+            }
+        }
+    }
+}
